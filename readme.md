@@ -13,7 +13,7 @@ Search algorithm to solve the CSP
 Heuristics (min remaining values, least constraining value, tie breaking rules)
 Constraint propagation using AC3.
 
-
+![4-queens](/pic/4-queens.png)
 ## Heuritic
 ### MRV
 The MRV heuristic selects the next variable to assign a value to, based on the smallest number of remaining legal values in its domain. The rationale behind MRV is to choose the variable that is most constrained but still has a possibility to find a legal value, thereby possibly reducing the chances of a failure sooner and pruning the search space effectively.
