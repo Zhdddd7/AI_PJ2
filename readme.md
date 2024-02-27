@@ -23,7 +23,7 @@ Once a variable is chosen for assignment (often using MRV), the LCV heuristic de
 Tie-breaking rules are used when the application of MRV, LCV, or other heuristics results in a tie, meaning there are multiple equally good choices for the next step. These rules are additional strategies to decide among the tied options, aiming to further optimize the search process. Common tie-breakers include, but are not limited to:
 
 ## Propagations - AC3
-AC3 works by iteratively removing values from the domains of variables that are inconsistent with the constraints until all variables have domains containing only consistent values. Here's a step-by-step overview of how the algorithm operates:
+AC3 works by iteratively removing values from the domains of variables that are inconsistent with the constraints until all variables have domains containing only consistent values. 
 ## Search Algorithm
 ### State Space
 board: An N-length list of ints: board[N][N]  
@@ -47,3 +47,5 @@ Once a highly conflicted queen is identified, the script attempts to find a new 
 ### Iteration
 The script repeats the process of selecting the most conflicted queen and minimizing its conflicts by moving it to a better position. This process is repeated for a maximum number of iterations or until a solution is found where no queens conflict with each other.
 Max Iterations: The script has a limit (max_iterations) on how many times it will attempt to repair the board. This prevents it from running indefinitely in case a solution isn't found.
+
+
